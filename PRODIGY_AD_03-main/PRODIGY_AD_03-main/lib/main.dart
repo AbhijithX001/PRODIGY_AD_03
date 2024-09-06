@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark, // Dark theme
+        brightness: Brightness.light, // Dark theme
       ),
       home: const StopwatchPage(),
     );
@@ -78,7 +78,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
           children: <Widget>[
             const Text(
                 style: TextStyle(
-                    color: Color.fromARGB(255, 187, 187, 187),
+                    color: Color.fromARGB(255, 96, 96, 96),
                     fontSize: 30,
                     fontWeight: FontWeight.bold),
                 "STOP WATCH"),
@@ -88,7 +88,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
             Text(
               _formatTime(_stopwatch.elapsedMilliseconds),
               style: const TextStyle(
-                  color: Color.fromARGB(255, 170, 202, 199),
+                  color: Color.fromARGB(255, 202, 200, 170),
                   fontSize: 50.0,
                   fontWeight: FontWeight.bold),
             ),
@@ -103,7 +103,7 @@ class _StopwatchPageState extends State<StopwatchPage> {
                           horizontal: 50.0, vertical: 10.0),
                       backgroundColor: _stopwatch.isRunning
                           ? const Color.fromARGB(255, 216, 31, 18)
-                          : const Color.fromARGB(255, 72, 62, 62),
+                          : const Color.fromARGB(255, 69, 72, 62),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       ),
@@ -123,7 +123,8 @@ class _StopwatchPageState extends State<StopwatchPage> {
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 50.0, vertical: 10.0),
-                      backgroundColor: const Color.fromARGB(255, 72, 62, 62),
+                      backgroundColor:                           Color.fromARGB(255, 69, 72, 62),
+
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0),
                       ),
